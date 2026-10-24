@@ -2,8 +2,7 @@
 
 > **Client Context:** UK Energy Utility Power Procurement Desk  
 > **Challenge Window:** January 2026 Wholesale Market Delivery Scope  
-> **Video Demo:** [Unlisted YouTube Video Link](https://youtu.be/YOUR_VIDEO_ID) *(10 min max: 5 min Client Pitch + 5 min Tech Lead Review)*  
-> **Live Web App:** [https://YOUR_APP_NAME.vercel.app](https://YOUR_APP_NAME.vercel.app) *(or deployed Heroku/Render URL)*  
+> **Data Sources:** Elexon BMRS `FUELHH` (Half-Hourly Metered Actuals) & `WINDFOR` (Hourly Forecast Runs)  
 
 ---
 
@@ -252,13 +251,9 @@ The evaluation begins with the unlisted YouTube video (maximum 10 minutes total)
 
 ---
 
-## 9. Deployed Application & Submission Checklist
+## 9. Submission
 
-* **Live Web App:** `https://<YOUR_APP_NAME>.vercel.app` *(or deployed Render/Heroku URL)*
-* **API Documentation:** `https://<YOUR_APP_NAME>.onrender.com/docs` *(or `/docs` on your deployed server)*
-* **Unlisted YouTube Video:** `https://youtu.be/<YOUR_VIDEO_ID>`
-
-> **Submission Verification:** Open the deployed web app and API documentation in an **Incognito / Private Window** to confirm public accessibility without authentication.
+Live app link, API documentation, and video demo links are provided in the assignment submission form.
 
 ---
 
