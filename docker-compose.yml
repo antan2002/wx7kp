@@ -3,8 +3,8 @@ version: '3.8'
 services:
   backend:
     build:
-      context: .
-      dockerfile: backend/Dockerfile
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: gustline-backend
     ports:
       - "8000:8000"
@@ -12,7 +12,7 @@ services:
       - PORT=8000
       - LOG_LEVEL=INFO
       - CORS_ORIGINS=*
-      - WIND_DB_PATH=/app/backend/data/wind.db
+      - WIND_DB_PATH=/app/data/wind.db
       - ELEXON_BASE_URL=https://data.elexon.co.uk/bmrs/api/v1
       - ELEXON_ACTUALS_URL=https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH
       - ELEXON_FORECASTS_URL=https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR
