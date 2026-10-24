@@ -2,9 +2,8 @@
 
 > **Client Context:** UK Energy Utility Power Procurement Desk  
 > **Challenge Window:** January 2026 Wholesale Market Delivery Scope  
-> **Data Sources:** Elexon BMRS `FUELHH` (Half-Hourly Metered Actuals) & `WINDFOR` (Hourly Forecast Runs)  
-> **Video Demo:** [Unlisted YouTube Demo Link Placeholder](https://youtu.be/your-video-id) *(10 min max: 5 min Client Pitch + 5 min Tech Lead Review)*  
-> **Live Web App:** [https://gridbricks-wind-intel.vercel.app](https://gridbricks-wind-intel.vercel.app) *(or deployed Heroku/Render URL)*  
+> **Video Demo:** [Unlisted YouTube Video Link](https://youtu.be/YOUR_VIDEO_ID) *(10 min max: 5 min Client Pitch + 5 min Tech Lead Review)*  
+> **Live Web App:** [https://YOUR_APP_NAME.vercel.app](https://YOUR_APP_NAME.vercel.app) *(or deployed Heroku/Render URL)*  
 
 ---
 
@@ -255,9 +254,9 @@ The evaluation begins with the unlisted YouTube video (maximum 10 minutes total)
 
 ## 9. Deployed Application & Submission Checklist
 
-* **Live Web App:** [https://gridbricks-wind-intel.vercel.app](https://gridbricks-wind-intel.vercel.app) *(or your deployed Vercel/Render URL)*
-* **API Documentation:** [https://gridbricks-wind-intel-api.onrender.com/docs](https://gridbricks-wind-intel-api.onrender.com/docs)
-* **Unlisted YouTube Video:** [https://youtu.be/your-video-id](https://youtu.be/your-video-id)
+* **Live Web App:** `https://<YOUR_APP_NAME>.vercel.app` *(or deployed Render/Heroku URL)*
+* **API Documentation:** `https://<YOUR_APP_NAME>.onrender.com/docs` *(or `/docs` on your deployed server)*
+* **Unlisted YouTube Video:** `https://youtu.be/<YOUR_VIDEO_ID>`
 
 > **Submission Verification:** Open the deployed web app and API documentation in an **Incognito / Private Window** to confirm public accessibility without authentication.
 
@@ -266,5 +265,5 @@ The evaluation begins with the unlisted YouTube video (maximum 10 minutes total)
 ## 10. AI Tooling Disclosure
 
 As required by the assignment guidelines:
-* **AI Assistance:** This application was developed with the assistance of **OpenCode** (an AI coding assistant) for boilerplate scaffolding, CSS design tokens, and unit test structuring.
+* **AI Assistance:** Claude (Anthropic) was used to assist with architecture planning, boilerplate generation, and test suite structuring.
 * **Domain & Verification:** All market mechanics, strict D-1 causality logic (11:00 London gate closure cutoff with zero future lookahead), settlement period conversions, empirical P10/P90 quantile risk modeling, and Elexon BMRS data pipelines were engineered, validated, and verified against UK national grid benchmarks.
