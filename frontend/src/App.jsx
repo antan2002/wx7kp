@@ -294,7 +294,7 @@ export default function App() {
               title="Refresh Analytics"
               style={{ padding: '4px 8px', border: '1px solid var(--border-color)', borderRadius: '4px' }}
             >
-              <RefreshCw size={12} />
+              <RefreshCw size={12} className={loadingDecision ? 'animate-spin' : ''} />
             </button>
           </div>
         </div>

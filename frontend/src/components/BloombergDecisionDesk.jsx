@@ -134,7 +134,7 @@ export default function BloombergDecisionDesk({
   if (loading) {
     return (
       <div className="panel-box" style={{ padding: '60px', textAlign: 'center' }}>
-        <div style={{ display: 'inline-block', width: '36px', height: '36px', border: '3px solid #BFDBFE', borderTopColor: '#1E40AF', borderRadius: '50%', animation: 'spin 0.8s linear infinite', marginBottom: '14px' }}></div>
+        <div className="loading-spinner"></div>
         <p style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>
           Calculating day-ahead procurement decision model for {deliveryDate}…
         </p>
