@@ -260,5 +260,5 @@ Live app link, API documentation, and video demo links are provided in the assig
 ## 10. AI Tooling Disclosure
 
 As required by the assignment guidelines:
-* **AI Assistance:** Claude (Anthropic) was used to assist with architecture planning, boilerplate generation, and test suite structuring.
+* **AI Assistance:** OpenCode was used to assist with architecture planning, boilerplate generation, and test suite structuring.
 * **Domain & Verification:** All market mechanics, strict D-1 causality logic (11:00 London gate closure cutoff with zero future lookahead), settlement period conversions, empirical P10/P90 quantile risk modeling, and Elexon BMRS data pipelines were engineered, validated, and verified against UK national grid benchmarks.
