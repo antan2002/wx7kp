@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: gustline-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - LOG_LEVEL=INFO
+      - CORS_ORIGINS=*
+      - WIND_DB_PATH=/app/backend/data/wind.db
+      - ELEXON_BASE_URL=https://data.elexon.co.uk/bmrs/api/v1
+      - ELEXON_ACTUALS_URL=https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH
+      - ELEXON_FORECASTS_URL=https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=${VITE_API_URL:-}
+        - REACT_APP_API_URL=${REACT_APP_API_URL:-}
+    container_name: gustline-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=${VITE_API_URL:-}
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-}
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
