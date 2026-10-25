@@ -1,6 +1,6 @@
 # Gustline — UK National Wind Power Day-Ahead Intelligence Platform
 
-![Uploading Wind Power Forecasting Dashboardยิงปลา.png…]()
+<img width="1672" height="941" alt="Wind Power Forecasting Dashboard" src="https://github.com/user-attachments/assets/7ab4d279-aed0-4b13-abe3-23f2497e5d74" />
 
 
 > **Client Context:** UK Energy Utility Power Procurement Desk  
