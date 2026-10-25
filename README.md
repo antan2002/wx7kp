@@ -1,5 +1,8 @@
 # Gustline — UK National Wind Power Day-Ahead Intelligence Platform
 
+![Uploading Wind Power Forecasting Dashboardยิงปลา.png…]()
+
+
 > **Client Context:** UK Energy Utility Power Procurement Desk  
 > **Challenge Window:** January 2026 Wholesale Market Delivery Scope  
 > **Data Sources:** Elexon BMRS `FUELHH` (Half-Hourly Metered Actuals) & `WINDFOR` (Hourly Forecast Runs)  
